@@ -1,0 +1,17 @@
+# Secrets
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# Swift / SPM
+.build/
+.swiftpm/
+*.xcodeproj
+*.xcworkspace
+DerivedData/
+
+# IDE (optional local settings)
+.vscode/
+.idea/

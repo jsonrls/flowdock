@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Flowdock is a calm, all-in-one productivity workspace for macOS. Join the launch list for early access."
+    />
+    <meta name="theme-color" content="#f5f5f5" />
+    <meta property="og:title" content="Flowdock — Your workday, in one flow." />
+    <meta
+      property="og:description"
+      content="Focus, launch, search, and create from one calm macOS workspace."
+    />
+    <title>Flowdock — Your workday, in one flow.</title>
+    <link rel="icon" type="image/png" href="assets/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="page-grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Flowdock home">
+        <img src="assets/logo.png" alt="" width="38" height="38" />
+        <span>Flowdock</span>
+      </a>
+
+      <div class="header-actions">
+        <span class="availability"><i></i> Private beta · macOS</span>
+        <a class="text-link" href="#join">Get early access <span>↗</span></a>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">The command center for your workday</p>
+          <h1 id="hero-title" class="reveal reveal-delay-1">
+            Your workday,<br />
+            <em>in one flow.</em>
+          </h1>
+          <p class="hero-summary reveal reveal-delay-2">
+            Flowdock brings your focus, apps, clipboard, files, and quick AI actions into one calm
+            macOS workspace—so you can spend less time switching and more time moving.
+          </p>
+
+          <form
+            id="join"
+            class="waitlist-form reveal reveal-delay-3"
+            novalidate
+            data-endpoint=""
+          >
+            <div class="input-shell">
+              <label class="sr-only" for="email">Work email address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                inputmode="email"
+                autocomplete="email"
+                placeholder="you@yourdomain.com"
+                required
+              />
+              <button type="submit">
+                <span>Join the launch list</span>
+                <svg viewBox="0 0 20 20" aria-hidden="true">
+                  <path d="M4 10h11M11 6l4 4-4 4" />
+                </svg>
+              </button>
+            </div>
+            <p class="form-note" id="form-note" aria-live="polite">
+              No noise. Just thoughtful product updates and an invite when we’re ready.
+            </p>
+          </form>
+
+          <div class="trust-row reveal reveal-delay-4" aria-label="Product principles">
+            <span>Native speed</span>
+            <span>Private by default</span>
+            <span>Built for macOS</span>
+          </div>
+        </div>
+
+        <div class="product-stage reveal reveal-delay-2">
+          <img
+            class="hero-image"
+            src="assets/hero.png"
+            alt="Flowdock dashboard showing focus tasks, running apps, recent files, workspaces, clipboard history, system health, and quick AI actions"
+            width="2866"
+            height="1926"
+          />
+        </div>
+      </section>
+
+      <section class="promise" aria-label="Flowdock promise">
+        <p class="eyebrow">One place. Fewer detours.</p>
+        <div class="promise-grid">
+          <h2>Keep the thread.<br />Lose the clutter.</h2>
+          <p>
+            Flowdock is being built for people who want their computer to feel like a workspace
+            again—not a maze of tabs, launchers, and disconnected utilities.
+          </p>
+        </div>
+      </section>
+
+      <section class="features" id="features" aria-labelledby="features-title">
+        <div class="features-shell">
+          <header class="features-intro">
+            <p class="feature-eyebrow"><span>Inside Flowdock</span> Four ways to stay moving</p>
+            <div>
+              <h2 id="features-title">Less switching.<br /><em>More finishing.</em></h2>
+              <p>
+                The small utilities you reach for all day, composed into one deliberate workspace.
+                Everything stays close without competing for your attention.
+              </p>
+            </div>
+          </header>
+
+          <div class="feature-grid">
+            <article class="feature-card feature-card-search">
+              <div class="feature-copy">
+                <p class="feature-number">01 <span>Universal search</span></p>
+                <h3>One shortcut.<br />Every result.</h3>
+                <p>
+                  Search tasks, timers, files, and open apps in one pass. The result you need is
+                  ready before context switching gets a chance.
+                </p>
+                <ul class="feature-tags" aria-label="Search capabilities">
+                  <li>Tasks</li>
+                  <li>Files</li>
+                  <li>Apps</li>
+                  <li>Timers</li>
+                </ul>
+              </div>
+              <div class="feature-media feature-media-search">
+                <img
+                  src="assets/features/search-result.png"
+                  alt="Flowdock universal search showing matching tasks, Pomodoro presets, files, and apps"
+                  width="2866"
+                  height="1926"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+
+            <article class="feature-card feature-card-tasks">
+              <div class="feature-copy">
+                <p class="feature-number">02 <span>Today’s focus</span></p>
+                <h3>Give today a clear next move.</h3>
+                <p>
+                  Keep a short, honest list with just enough context and priority to make starting
+                  feel obvious.
+                </p>
+              </div>
+              <div class="feature-media feature-media-tasks">
+                <img
+                  src="assets/features/new-to-do.png"
+                  alt="Creating a focused task in Flowdock with a note and priority level"
+                  width="2866"
+                  height="1926"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+
+            <article class="feature-card feature-card-focus">
+              <div class="feature-copy">
+                <p class="feature-number">03 <span>Flow sessions</span></p>
+                <h3>Make room for deep work.</h3>
+                <p>
+                  Shape a timer around the work, then let Flowdock cover the workspace until the
+                  session is done.
+                </p>
+              </div>
+              <div class="feature-media feature-media-focus">
+                <img
+                  class="focus-session-shot"
+                  src="assets/features/pomodoro-timer.png"
+                  alt="A distraction-free Flowdock deep-work timer in progress"
+                  width="3420"
+                  height="2214"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="focus-setup-shot"
+                  src="assets/features/new-pomodoro.png"
+                  alt="Creating a custom Pomodoro session in Flowdock"
+                  width="2866"
+                  height="1926"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+
+            <article class="feature-card feature-card-workspaces">
+              <div class="feature-copy">
+                <p class="feature-number">04 <span>Workspaces</span></p>
+                <h3>Change context without rebuilding it.</h3>
+                <p>
+                  Save the exact group of apps a project needs. Launch the whole setup together,
+                  whether you’re coding, planning, or winding down.
+                </p>
+                <p class="feature-note"><i></i> One click restores your working set</p>
+              </div>
+              <div class="feature-media feature-media-workspaces">
+                <img
+                  class="workspace-library-shot"
+                  src="assets/features/workspace-library.png"
+                  alt="Flowdock workspace library with saved groups for gaming, work, and coding"
+                  width="2866"
+                  height="1926"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <img
+                  class="workspace-apps-shot"
+                  src="assets/features/workspace-add-app.png"
+                  alt="Choosing apps to include in a Flowdock workspace"
+                  width="2866"
+                  height="1926"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </article>
+          </div>
+
+          <div class="features-cta">
+            <p>One calm surface for the work behind your work.</p>
+            <a href="#join">Get early access <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#top" aria-label="Back to top">
+        <img src="assets/logo.png" alt="" width="30" height="30" />
+        <span>Flowdock</span>
+      </a>
+      <p>Designed for flow. Built for Mac.</p>
+      <p>© <span id="year"></span> Flowdock</p>
+    </footer>
+  </body>
+</html>
